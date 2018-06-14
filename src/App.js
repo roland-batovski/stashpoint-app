@@ -7,6 +7,12 @@ const items=[1,2,3,4,5]
 
 class App extends Component {
 
+  constructor(props) {
+    super(props);
+
+    this.state = {isLoaded: false};
+  }
+
   componentWillMount() {
     this.getStashpoints();
   }
@@ -34,9 +40,9 @@ class App extends Component {
 
   render() {
     return (
-
-      <div className="ListContainer">
-      <StashpointListComponent items={items} />
+      <div className="Container"> 
+      {!this.state.isLoaded && <div className="loaderContainer"><div className="loader"/></div>}
+      {this.state.isLoaded && <div className="ListContainer"><StashpointListComponent items={this.state.stashpoints} /></div>}
       </div>
     );
   }
@@ -45,8 +51,26 @@ class App extends Component {
     console.log('stashpoints ', stashpoints);
 
     let parsedStashpoints = [];
+    for (var i in stashpoints) {
+      let parsedStashpoint = {};
+      parsedStashpoint.name = stashpoints[i].name;
+      parsedStashpoint.location = stashpoints[i].location_name;
+      parsedStashpoint.description = stashpoints[i].description;
+      parsedStashpoint.image = stashpoints[i].photos.length >0 ? stashpoints[i].photos[0] : '';
+      parsedStashpoint.nearestCity = stashpoints[i].nearest_city != null ? stashpoints[i].nearest_city.name : '';
+      parsedStashpoint.contact = stashpoints[i].contact != null ? stashpoints[i].contact : [];
+      parsedStashpoint.openLate = stashpoints[i].open_late;
+      parsedStashpoint.openAlways = stashpoints[i].open_twentyfour_seven;
+      parsedStashpoint.rating = stashpoints[i].rating;
+      parsedStashpoint.ratingCount = stashpoints[i].rating_count;
+      parsedStashpoint.capacity = stashpoints[i].capacity;
+      parsedStashpoint.views = stashpoints[i].views_last_30_days;
+      parsedStashpoint.pricingStructure = stashpoints[i].pricing_structure;
 
-    return parsedStashpoints
+      parsedStashpoints[i] = parsedStashpoint;
+    }
+
+    return parsedStashpoints;
   }
 }
 
