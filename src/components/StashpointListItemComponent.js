@@ -4,10 +4,10 @@ class StashpointListItemComponent extends Component {
 
   render() {
   	// magic to capitalise city name
-  	let nearestCity = this.props.nearestCity.substring(0,1).toUpperCase() + this.props.nearestCity.substring(1);
-  	let contactName = this.props.contact.name != null ? this.props.contact.name : 'N/A';
-  	let contactEmail = this.props.contact.email != null ? this.props.contact.email : 'N/A';
-  	let contactPhone = this.props.contact.phone_number != null ? this.props.contact.phone_number : 'N/A';
+  	let nearestCity 	= this.props.nearestCity.substring(0,1).toUpperCase() + this.props.nearestCity.substring(1);
+  	let contactName 	= this.props.contact.name != null ? this.props.contact.name : 'N/A';
+  	let contactEmail 	= this.props.contact.email != null ? this.props.contact.email : 'N/A';
+  	let contactPhone 	= this.props.contact.phone_number != null ? this.props.contact.phone_number : 'N/A';
 
   	let open = this.props.openLate ? 'Yes' : 'No';
 

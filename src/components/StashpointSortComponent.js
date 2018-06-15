@@ -13,7 +13,7 @@ class StashpointSortComponent extends Component {
 
   render() {
   	let capacityDivClassName = this.state.capacitySelected ? "SortOptionContainerSelected" : "SortOptionContainer";
-  	let bagsDivClassName = this.state.bagsSelected ? "SortOptionContainerSelected" : "SortOptionContainer";
+  	let bagsDivClassName     = this.state.bagsSelected ? "SortOptionContainerSelected" : "SortOptionContainer";
 
     return (
         <div className="StashpointSortContainer">

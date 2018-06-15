@@ -13,10 +13,10 @@ class StashpointFilterComponent extends Component {
 
   render() {
 
-  	let openLateDivClassName = this.state.openLateSelected ? "FilterOptionContainerSelected" : "FilterOptionContainer";
-  	let twentyFourDivClassName = this.state.openTwentyFourSelected ? "FilterOptionContainerSelected" : "FilterOptionContainer";
-  	let openLateTextClassName = this.state.openLateSelected ? "FilterOptionSelected" : "FilterOption";
-  	let twentyFourTextClassName = this.state.openTwentyFourSelected ? "FilterOptionSelected" : "FilterOption";
+  	let openLateDivClassName     = this.state.openLateSelected ? "FilterOptionContainerSelected" : "FilterOptionContainer";
+  	let twentyFourDivClassName   = this.state.openTwentyFourSelected ? "FilterOptionContainerSelected" : "FilterOptionContainer";
+  	let openLateTextClassName    = this.state.openLateSelected ? "FilterOptionSelected" : "FilterOption";
+  	let twentyFourTextClassName  = this.state.openTwentyFourSelected ? "FilterOptionSelected" : "FilterOption";
 
     return (
         <div className="StashpointFilterContainer">

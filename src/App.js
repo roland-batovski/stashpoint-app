@@ -94,20 +94,20 @@ class App extends Component {
     let parsedStashpoints = [];
     for (var i in stashpoints) {
       let parsedStashpoint = {};
-      parsedStashpoint.id = stashpoints[i].id;
-      parsedStashpoint.name = stashpoints[i].name;
-      parsedStashpoint.location = stashpoints[i].location_name;
-      parsedStashpoint.description = stashpoints[i].description;
-      parsedStashpoint.image = stashpoints[i].photos.length >0 ? stashpoints[i].photos[0] : '';
-      parsedStashpoint.nearestCity = stashpoints[i].nearest_city != null ? stashpoints[i].nearest_city.name : '';
-      parsedStashpoint.contact = stashpoints[i].contact != null ? stashpoints[i].contact : [];
-      parsedStashpoint.openLate = stashpoints[i].open_late;
-      parsedStashpoint.openAlways = stashpoints[i].open_twentyfour_seven;
-      parsedStashpoint.rating = stashpoints[i].rating;
-      parsedStashpoint.ratingCount = stashpoints[i].rating_count;
-      parsedStashpoint.capacity = stashpoints[i].capacity;
-      parsedStashpoint.views = stashpoints[i].views_last_30_days;
-      parsedStashpoint.pricingStructure = stashpoints[i].pricing_structure;
+      parsedStashpoint.id                 = stashpoints[i].id;
+      parsedStashpoint.name               = stashpoints[i].name;
+      parsedStashpoint.location           = stashpoints[i].location_name;
+      parsedStashpoint.description        = stashpoints[i].description;
+      parsedStashpoint.image              = stashpoints[i].photos.length >0 ? stashpoints[i].photos[0] : '';
+      parsedStashpoint.nearestCity        = stashpoints[i].nearest_city != null ? stashpoints[i].nearest_city.name : '';
+      parsedStashpoint.contact            = stashpoints[i].contact != null ? stashpoints[i].contact : [];
+      parsedStashpoint.openLate           = stashpoints[i].open_late;
+      parsedStashpoint.openAlways         = stashpoints[i].open_twentyfour_seven;
+      parsedStashpoint.rating             = stashpoints[i].rating;
+      parsedStashpoint.ratingCount        = stashpoints[i].rating_count;
+      parsedStashpoint.capacity           = stashpoints[i].capacity;
+      parsedStashpoint.views              = stashpoints[i].views_last_30_days;
+      parsedStashpoint.pricingStructure   = stashpoints[i].pricing_structure;
 
       parsedStashpoints[i] = parsedStashpoint;
     }
