@@ -38,40 +38,34 @@
   width: 100%;  
 }
 
-.imgblock {
+.ImageBlock {
   width: 30%;
   margin-left: 10px;
   margin-top: 10px;
   display: inline-block;
 }
 
-.detailsblock {
+.DetailsBlock {
   width: 35%;
   display: inline-block;
   overflow: hidden;
 }
 
-.contactblock {
+.ContactBlock {
   width: 30%;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.description {
+.DescriptionBlock {
   width: 63%;
   margin-left: 10px;
   display: inline-block;
   overflow: hidden;
 }
 
-.ratingviews {
-  width: 60%;
-  margin-top: 10px;
-  display: inline-block;
-}
-
-.price {
+.PriceBlock {
   width: 30%;
   margin-left: 10px;
   margin-top: 10px;
@@ -94,6 +88,88 @@
 
 .StashpointSmallText {
   color: #0A2EBC;
+  font-size: 12px;
+}
+
+.StashpointHeaderContainer {
+  background: #fff;
+  height: 80px;
+  margin: 10px;
+}
+
+.StashpointFilterContainer {
+  background: #0A2EBC;
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.StashpointSortContainer {
+  background: #fff;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+.FilterLabel {
+  color: #fff;
+  font-size: 14px;
+  margin: 10px 0px 10px 0px;
+}
+
+.FilterOptionContainer {
+  background-color: #fff;
+  height: 30px;
+  width: 45%;
+  margin: 6px;
+  display: inline-block;
+}
+
+.FilterOptionContainerSelected {
+  background-color: #001C8A;
+  height: 30px;
+  width: 45%;
+  margin: 6px;
+  display: inline-block;
+}
+
+.FilterOption {
+  color: #0A2EBC;
+  font-size: 12px;
+}
+
+.FilterOptionSelected {
+  color: #fff;
+  font-size: 12px;
+}
+
+.SortLabel {
+  color: #0A2EBC;
+  font-size: 14px;
+  margin: 10px 0px 10px 0px;
+}
+
+.SortOptionContainer {
+  background-color: #0A2EBC;
+  height: 30px;
+  width: 45%;
+  margin: 6px;
+  display: inline-block;
+}
+
+.SortOptionContainerSelected {
+  background-color: #001C8A;
+  height: 30px;
+  width: 45%;
+  margin: 6px;
+  display: inline-block;
+}
+
+.SortOption {
+  color: #fff;
   font-size: 12px;
 }
 

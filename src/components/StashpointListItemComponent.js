@@ -21,17 +21,17 @@ class StashpointListItemComponent extends Component {
     	<li>
     	<div className="StashpointListItemContainer">
     		<div className="row">
-    			<div className="imgblock">
-	    			<img className="StashpointAvatarImg" src={this.props.image}/>
+    			<div className="ImageBlock">
+	    			<img className="StashpointAvatarImg" src={this.props.image} alt='Stashpoint Avatar'/>
 	    		</div>
-	    		<div className="detailsblock">
+	    		<div className="DetailsBlock">
 	    			<p className="StashpointLargeText">{this.props.name}</p>
 	    			<p className="StashpointSmallText">{this.props.location}</p>
 	    			<p className="StashpointSmallText">Nearest City: {nearestCity}</p>
 	    			<p className="StashpointSmallText">Open Late: {open}</p>
 	    		</div>
 
-	    		<div className="contactblock">
+	    		<div className="ContactBlock">
 	    			<p className="StashpointLargeText">Contact Details</p>
 	    			<p className="StashpointSmallText">Name: {contactName}</p>
 	    			<p className="StashpointSmallText">Email: {contactEmail}</p>
@@ -41,7 +41,7 @@ class StashpointListItemComponent extends Component {
 	    	<div className="Separator"/>
 
 	    	<div className="row">
-	    		<div className="description">
+	    		<div className="DescriptionBlock">
 	    			<p className="StashpointLargeText">Description</p>
 	    			<p className="StashpointSmallText">{description}</p>
 	    			<p className="StashpointSmallText">Capacity: {this.props.capacity}</p>
@@ -49,7 +49,7 @@ class StashpointListItemComponent extends Component {
 	    			<p className="StashpointSmallText inline-text">Views Last Month: {this.props.views}</p>
 	    		</div>
 
-	    		<div className="price">
+	    		<div className="PriceBlock">
 	    			<p className="StashpointLargeText">Prices</p>
 	    			<p className="StashpointSmallText">First Day Cost: {this.props.pricing.first_day_cost} {this.props.pricing.ccy}</p>
 	    			<p className="StashpointSmallText">First Day Commission: {this.props.pricing.first_day_commission} {this.props.pricing.ccy}</p>

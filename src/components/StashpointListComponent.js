@@ -15,6 +15,7 @@ function ItemList(props) {
     const items = props.items;
     const list = items.map((item) => 
       <StashpointListItemComponent
+        key={item.id.toString()}
         image={item.image}
         name={item.name}
         location={item.location}
